@@ -45,7 +45,6 @@ const CrudApi = () => {
     })
 
   const loadselect = async (num) => {
-    console.log(num);
     const response = await getPokemon(num);
     if (response.status === 200) {
       dispatch(READ_ALL_DATA_2(response.data));
@@ -203,7 +202,10 @@ const CrudApi = () => {
     }
     refPanel.current.classList.add('is-hidePanel')
     refPanelPokeball.current.classList.add('is-hidePanel')
-    refImgSelect.current.classList.remove('is-correct')
+    if (showImg) {
+      refImgSelect.current.classList.remove('is-correct')
+    }
+    setHidePanel(true)
   };
 
   const handleReload = () => { 
@@ -254,6 +256,16 @@ const CrudApi = () => {
     dispatch(DELETE_POKEMON(e.target.value))
   };
 
+  const handleSubmit = () => {
+    if (showImg) {
+      refImgSelect.current.classList.add("is-correct");
+    }else {
+      setShowImg(true)
+    }
+    pokemonSelect(dbPokemonSelect.name);
+  }
+
+
   return (
     <div id="divPage">
       <div ref={refPanelPokeball}>
@@ -266,14 +278,16 @@ const CrudApi = () => {
                   style={{ display: "flex", flexDirection: "column" }}
                 >
                   <button
-                    disabled
                     style={{
                       cursor: "not-allowed",
+                      color: "white",
+                      cursor: "pointer",
                       backgroundColor: "rgb(203, 192, 206)",
                     }}
+                    onClick={handleSubmit}
                   >
                     {" "}
-                    Show Pokemon
+                    Submit
                   </button>
                   <img
                     id="imgPokemon"
