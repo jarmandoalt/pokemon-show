@@ -26,7 +26,7 @@ img {
 #divPage > div:last-child {
   position: fixed;
   left: 5vw;
-  top: 5vh;
+  top: 2vh;
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
@@ -43,8 +43,8 @@ img {
 #divPage > div:last-child > div:last-child {
   display: flex;
   flex-direction: column;
-  height: 72vh;
-  width: 80vw;
+  height: 70vh;
+  width: 70vw;
   border-radius: 10px;
   justify-content: space-around;
   background-color: rgba(0, 0, 0, 0.452);
@@ -65,7 +65,7 @@ img {
 }
 
 #divPage > div:last-child > div:last-child > div:first-child > h3{
-  width: 70vw;
+  width: 60vw;
   margin: auto;
   text-align: center;
   color: rgb(245, 246, 247);
@@ -78,7 +78,7 @@ img {
 
 #divPage > div:last-child > div:last-child > div > button {
   width: 50vw;
-  height: 5vh;
+  height: 4vh;
   border: none;
   border-radius: 4px;
   margin: auto;
@@ -99,7 +99,7 @@ img {
 
 #divPage > div:last-child > div:last-child > div:last-child > button:last-child {
   width: 45vw;
-  height: 8vw;
+  height: 3vh;
   margin-top: 1vh;
   font-size: 3.5vw;
   color: whitesmoke;
@@ -116,8 +116,8 @@ img {
 
 #divBtnHide {
   position: fixed;
-  top: 78vh;
-  left: 80vw;
+  top: 73vh;
+  left: 73vw;
   height: 20vh;
   margin: auto;
   width: 10vw;
@@ -140,7 +140,7 @@ img {
   background-color: rgb(197, 213, 226);
   cursor: pointer;
   margin-top: 1vh;
-  width: 15vw;
+  width: 18vw;
   border-radius: 10%;
   height: 6vh;
   border: none;
@@ -148,20 +148,21 @@ img {
 
 #divBtnHide > div:last-child {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 15vw;
+  margin-left: 1vw;
 }
 
 #divBtnHide > div:last-child > h3 {
-  font-size: 1.1vw;
+  font-size: 2vw;
   color: gray;
 }
 
 #divBtnHide > div:last-child > img {
-  width: 7vw;
-  height: 2.5vw;
+  width: 15vw;
+  height: 5vw;
 }
 
 
@@ -256,7 +257,7 @@ img {
   border: none;
   width: 40vw;
   height: 5vh;
-  font-size: 3vw;
+  font-size: 4vw;
   background-color: rgb(193, 138, 207);
   border-radius: 4px;
   color: whitesmoke;
@@ -388,11 +389,11 @@ img {
 }
 
 #divBtnOpc > button {
-  width: 25vw;
+  width: 26vw;
   color: whitesmoke;
   margin-top: 2vh;
   height: 3vh;
-  font-size: 2.7vw;
+  font-size: 4vw;
   border-radius: 10px;
   background-color: rgba(121, 95, 122, 0.63);
   border: none;

@@ -201,6 +201,9 @@ const CrudApi = () => {
     } else {
       loadselect(arrGeneration[auxNum - 1]);
     }
+    refPanel.current.classList.add('is-hidePanel')
+    refPanelPokeball.current.classList.add('is-hidePanel')
+    refImgSelect.current.classList.remove('is-correct')
   };
 
   const handleReload = () => { 
