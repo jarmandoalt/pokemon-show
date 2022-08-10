@@ -152,19 +152,30 @@ img {
   align-items: center;
   justify-content: center;
   width: 15vw;
+  margin-top: 1vh;
   margin-left: 1vw;
+}
+
+#divBtnHide > div:last-child > div{
+  display: flex;
+  flex-direction: column;
+}
+
+#divBtnHide > div:last-child > div > h3 {
+  font-size: 2vw;
+  margin: auto;
+  color: gray;
+}
+
+#divBtnHide > div:last-child > div > img {
+  width: 15vw;
+  height: 5vw;
 }
 
 #divBtnHide > div:last-child > h3 {
   font-size: 2vw;
   color: gray;
 }
-
-#divBtnHide > div:last-child > img {
-  width: 15vw;
-  height: 5vw;
-}
-
 
 /************* Buscador ****************/
 
@@ -839,20 +850,32 @@ img {
   
   #divBtnHide > div:last-child {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 15vw;
+    margin-top: .5vh;
   }
   
-  #divBtnHide > div:last-child > h3 {
+  #divBtnHide > div:last-child > div {
+    display: flex;
+  }
+
+  #divBtnHide > div:last-child > div > h3 {
     font-size: 1.1vw;
     color: gray;
   }
   
-  #divBtnHide > div:last-child > img {
+  #divBtnHide > div:last-child > div > img {
     width: 7vw;
     height: 2.5vw;
+  }
+
+  #divBtnHide > div:last-child > h3 {
+    position: relative;
+    font-size: 1.3vw;
+    top: -1.3vh;
+    color: gray;
   }
   
   
@@ -926,6 +949,19 @@ img {
     text-align: center;
     font-size: 90vw;
     color: rgb(44, 155, 44);
+    font-size: 4vw;
+  }
+
+  #divLost {
+    width: 90vw;
+    margin: auto;
+  }
+  
+  #divLost > h2 {
+    margin: auto;
+    text-align: center;
+    font-size: 90vw;
+    color: rgb(204, 84, 29);
     font-size: 4vw;
   }
   
@@ -1382,7 +1418,7 @@ img {
   }
 
 
-@media screen and (min-width: 800px) and (max-width: 1500px) {
+@media screen and (min-width: 800px) and (max-width: 1800px) {
 
 /******* Selector Generarion ***********/
 
@@ -1519,20 +1555,33 @@ img {
 
 #divBtnHide > div:last-child {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 15vw;
+  width: 20vw;
+  margin-left: -2vw;
+  margin-top: 1vh;
 }
 
-#divBtnHide > div:last-child > h3 {
+#divBtnHide > div:last-child > div {
+  display: flex;
+}
+
+#divBtnHide > div:last-child > div > h3 {
   font-size: 1.1vw;
   color: gray;
 }
 
-#divBtnHide > div:last-child > img {
+#divBtnHide > div:last-child > div > img {
   width: 7vw;
   height: 2.5vw;
+}
+
+#divBtnHide > div:last-child > h3 {
+  position: relative;
+  color: gray;
+  font-size: 1.3vw;
+  top: -1.2vh;
 }
 
 /************* Buscador ****************/
@@ -1567,7 +1616,6 @@ img {
   text-align: center;
   color: rgb(158, 115, 175);
 }
-
 
 #divPage > div:first-child > div > div > img{
   width: 10vw;

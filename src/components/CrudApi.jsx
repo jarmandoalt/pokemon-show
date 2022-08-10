@@ -523,8 +523,11 @@ const CrudApi = () => {
           <button onClick={handleReload}> RELOAD </button>
           </div>
           <div>
+            <div>
             <h3>Powered by</h3>
             <img src={pokeapi} alt="" />
+            </div>
+            <h3>© AAM</h3>
           </div>
         </div>
       <div ref={refPanel}>
