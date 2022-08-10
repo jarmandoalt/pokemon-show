@@ -88,28 +88,28 @@ img {
 }
 
 #divPage > div:last-child > div:last-child > div > button:hover {
-  color: antiquewhite;
-  background-color: rgb(175, 166, 137);
+  color: whitesmoke;
+  background-color: rgb(129, 179, 212);
 }
 
 #divPage > div:last-child > div:last-child > div > button:first-child {
-  color: rgb(90, 87, 83);
-  background-color: rgb(175, 166, 137);
+  color: whitesmoke;
+  background-color: rgb(129, 179, 212);
 }
 
 #divPage > div:last-child > div:last-child > div:last-child > button:last-child {
   width: 45vw;
-  height: 3vh;
+  height: 3.3vh;
   margin-top: 1vh;
   font-size: 3.5vw;
   color: whitesmoke;
-  background-color: rgb(91, 174, 230);
+  background-color: rgb(171, 118, 192);
   border: none;
 }
 
 #divPage > div:last-child > div:last-child > div:last-child > button:last-child:hover {
   color: whitesmoke;
-  background-color: rgb(167, 209, 243);
+  background-color: rgb(171, 118, 192);
 }
 
 /************* Btn hide ***************/
@@ -137,7 +137,7 @@ img {
   position: relative;
   color: rgb(61, 91, 126);
   margin: auto;
-  background-color: rgba(197, 213, 226, 0.322);
+  background-color: rgba(197, 213, 226, 0.815);
   cursor: pointer;
   margin-top: 1vh;
   width: 18vw;
@@ -234,7 +234,33 @@ img {
   text-align: center;
   font-size: 90vw;
   color: rgb(44, 155, 44);
-  font-size: 4vw;
+  font-size: 8vw;
+}
+
+#divLost {
+  width: 90vw;
+  margin: auto;
+}
+
+#divLost > h2 {
+  margin: auto;
+  text-align: center;
+  font-size: 90vw;
+  color: rgb(206, 72, 32);
+  font-size: 8vw;
+}
+
+#divLost {
+  width: 90vw;
+  margin: auto;
+}
+
+#divLost > h2 {
+  margin: auto;
+  text-align: center;
+  font-size: 90vw;
+  color: rgb(182, 83, 37);
+  font-size: 8vw;
 }
 
 #imgPokemon {
@@ -256,7 +282,7 @@ img {
   margin: auto;
   border: none;
   width: 40vw;
-  height: 5vh;
+  height: 3vh;
   font-size: 4vw;
   background-color: rgb(193, 138, 207);
   border-radius: 4px;
@@ -266,7 +292,7 @@ img {
 #divImgPokemonShow > button {
   border: none;
   width: 40vw;
-  height: 5vh;
+  height: 3vh;
   border-radius: 10px;
 }
 
@@ -753,13 +779,13 @@ img {
   }
   
   #divPage > div:last-child > div:last-child > div > button:hover {
-    color: antiquewhite;
-    background-color: rgb(175, 166, 137);
+    color: whitesmoke;
+    background-color: rgb(129, 179, 212);
   }
   
   #divPage > div:last-child > div:last-child > div > button:first-child {
-    color: rgb(90, 87, 83);
-    background-color: rgb(175, 166, 137);
+    color: whitesmoke;
+    background-color: rgb(129, 179, 212);
   }
   
   #divPage > div:last-child > div:last-child > div:last-child > button:last-child {
@@ -768,13 +794,13 @@ img {
     margin-top: 1vh;
     font-size: 3vw;
     color: whitesmoke;
-    background-color: rgb(91, 174, 230);
+    background-color: rgb(171, 118, 192);
     border: none;
   }
   
   #divPage > div:last-child > div:last-child > div:last-child > button:last-child:hover {
     color: whitesmoke;
-    background-color: rgb(167, 209, 243);
+    background-color: rgb(171, 118, 192);
   }
   
   /************* Btn hide ***************/
@@ -1421,13 +1447,13 @@ img {
 }
 
 #divPage > div:last-child > div:last-child > div > button:hover {
-  color: antiquewhite;
-  background-color: rgb(175, 166, 137);
+  color: whitesmoke;
+  background-color: rgb(129, 179, 212);
 }
 
 #divPage > div:last-child > div:last-child > div > button:first-child {
-  color: rgb(90, 87, 83);
-  background-color: rgb(175, 166, 137);
+  color: whitesmoke;
+  background-color: rgb(129, 179, 212);
 }
 
 #divPage > div:last-child > div:last-child > div:last-child > button {
@@ -1445,13 +1471,13 @@ img {
   margin-top: 3vh;
   font-size: 1.3vw;
   color: whitesmoke;
-  background-color: rgb(91, 174, 230);
+  background-color: rgb(171, 118, 192);
   border: none;
 }
 
 #divPage > div:last-child > div:last-child > div:last-child > button:last-child:hover {
   color: whitesmoke;
-  background-color: rgb(167, 209, 243);
+  background-color: rgb(171, 118, 192);
 }
 
 #divPage > div:last-child > div:last-child > div:last-child > button:hover {
@@ -1547,20 +1573,22 @@ img {
   width: 10vw;
   margin-top: 2vh;
   height: 10vw;
+  margin: auto;
 }
 
 #divPage > div:first-child > div > div > div > img{
   width: 10vw;
   height: 10vw;
   margin-top: 2vh;
-  height: 10vw;
+  margin: auto;
 }
 
 #divPage > div:first-child > div > div > button{
-  width: 10vw;
+  width: 12vw;
   margin: auto;
   border: none;
   height: 4vh;
+  font-size: 1.5vw;
   background-color: rgb(203, 192, 206);
   border-radius: 4px;
   color: whitesmoke;
@@ -1579,8 +1607,14 @@ img {
 
 #divCorrect > h2 {
   color: rgb(44, 155, 44);
-  font-size: 2vw;
+  font-size: 3vw;
 }
+
+#divLost > h2 {
+  color: rgb(216, 103, 37);
+  font-size: 3vw;
+}
+
 
 #imgPokemon {
   width: 12vw;
@@ -1604,7 +1638,7 @@ img {
 }
 
 #divImgShow > button{
-  width: 10vw;
+  width: 12vw;
   margin: auto;
   border: none;
   background-color: rgb(193, 138, 207);
@@ -1648,8 +1682,8 @@ img {
   position: relative;
   background-color: red;
   z-index: 1;
-  top: -6.1vw;
-  left: 9vw;
+  top: -6vw;
+  left: 9.05vw;
   border-radius: 50%;
   width: 1.9vw;
   height: 1.9vw;

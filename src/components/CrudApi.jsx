@@ -31,9 +31,10 @@ const CrudApi = () => {
     [pokemonGen, setPokemonGen] = useState(0),
     [arrPokemonsUse, setArrPokemonsUse] = useState([]),
     [arrPokemons, setArrPokemons] = useState([]),
+    [disableBtn, setDisableBtn] = useState(false),
     refImgSelect = createRef(),
     refPanel = createRef(),
-    refPanelPokeball = createRef();
+    refPanelPokeball = createRef()
 
     document.addEventListener('keydown', (e) => {
       let $input = document.getElementById('buscador')
@@ -176,8 +177,10 @@ const CrudApi = () => {
         arrGeneration.filter((item) => item !== Number(e.target.slot))
       );
       e.target.style.backgroundColor = "rgb(158, 157, 152)";
+      e.target.style.color = "rgb(90, 87, 83)";
     } else {
-      e.target.style.backgroundColor = "rgb(175, 166, 137)";
+      e.target.style.backgroundColor = "rgb(129, 179, 212)";
+      e.target.style.color = "whitesmoke";
       setArrGeneration([...arrGeneration, Number(e.target.slot)]);
     }
   };
@@ -206,6 +209,7 @@ const CrudApi = () => {
       refImgSelect.current.classList.remove('is-correct')
     }
     setHidePanel(true)
+    setDisableBtn(false)
   };
 
   const handleReload = () => { 
@@ -242,9 +246,11 @@ const CrudApi = () => {
       if (showImg) {
         setShowCorrect(true);
         refImgSelect.current.classList.add("is-correct");
+        setDisableBtn(true)
       }else {
         setShowCorrect(true);
         setShowImg(true)
+        setDisableBtn(true)
       }
     }
     pokemonSelect(e.target.value);
@@ -263,6 +269,7 @@ const CrudApi = () => {
       setShowImg(true)
     }
     pokemonSelect(dbPokemonSelect.name);
+    setDisableBtn(true)
   }
 
 
@@ -277,18 +284,30 @@ const CrudApi = () => {
                   id="divImgPokemonShow"
                   style={{ display: "flex", flexDirection: "column" }}
                 >
+                  {
+                    disableBtn ?
                   <button
                     style={{
-                      cursor: "not-allowed",
                       color: "white",
-                      cursor: "pointer",
+                      cursor: "not-allowed",
                       backgroundColor: "rgb(203, 192, 206)",
                     }}
-                    onClick={handleSubmit}
                   >
                     {" "}
                     Submit
-                  </button>
+                  </button>: 
+                  <button
+                  style={{
+                    color: "white",
+                    cursor: "pointer",
+                    backgroundColor: "rgb(203, 192, 206)",
+                  }}
+                  onClick={handleSubmit}
+                >
+                  {" "}
+                  Submit
+                </button>
+                  }
                   <img
                     id="imgPokemon"
                     ref={refImgSelect}
@@ -328,9 +347,13 @@ const CrudApi = () => {
             <div>
               {showCorrect ? (
                 <div id="divCorrect">
-                  <h2>WIN</h2>
+                  <h2> YOU WIN</h2>
                 </div>
               ) : (
+                disableBtn ?
+                <div id="divLost">
+                  <h2> YOU LOST </h2>
+                </div>:
                 <input
                   type="text"
                   name="busqueda"
@@ -345,15 +368,17 @@ const CrudApi = () => {
             </div>
             <div id="divBtnOpc">
               {namePokemonSelect.map(({ name }) => (
+                disableBtn ?
+                <div key={name}></div> :
                 <button
-                  onKeyDown={control}
-                  value={name}
-                  slot={name}
-                  key={name}
-                  onClick={selectNamePokemon}
-                >
-                  {name}
-                </button>
+                onKeyDown={control}
+                value={name}
+                slot={name}
+                key={name}
+                onClick={selectNamePokemon}
+              >
+                {name}
+              </button>
               ))}
             </div>
           </div>
@@ -510,7 +535,7 @@ const CrudApi = () => {
           <div>
             <button slot="151" onClick={handleBtnGeneration}>
               {" "}
-              First Generation{" "}
+            1° Generation{" "}
             </button>
             <button slot="100" onClick={handleBtnGeneration}>
               {" "}
