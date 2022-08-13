@@ -295,17 +295,17 @@ img {
   margin: auto;
   border: none;
   width: 40vw;
-  height: 3vh;
+  height: 4vh;
   font-size: 4vw;
   background-color: rgb(193, 138, 207);
-  border-radius: 4px;
+  border-radius: 10px;
   color: whitesmoke;
 }
 
 #divImgPokemonShow > button {
   border: none;
   width: 40vw;
-  height: 3vh;
+  height: 4vh;
   border-radius: 10px;
 }
 
