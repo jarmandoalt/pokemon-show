@@ -1513,16 +1513,6 @@ img {
   margin-top: 10vh;
   margin: auto;
   color: whitesmoke;
-  background-color: darkgreen;
-  border: none;
-}
-
-#divPage > div:last-child > div:last-child > div:last-child > button:last-child {
-  width: 8vw;
-  height: 2vw;
-  margin-top: 3vh;
-  font-size: 1.3vw;
-  color: whitesmoke;
   background-color: rgb(171, 118, 192);
   border: none;
 }
@@ -1534,14 +1524,6 @@ img {
 
 #divPage > div:last-child > div:last-child > div:last-child > button:hover {
   background-color: rgb(130, 150, 130)
-}
-
-#divPage > div:last-child > div:last-child > div:last-child > h3 {
-  font-size: 1vw;
-  width: auto;
-  color: rgba(94, 91, 91, 0.692);
-  margin: auto;
-  margin-bottom: 5px;
 }
 
 /************* Btn hide ***************/
@@ -1656,7 +1638,6 @@ img {
 }
 
 #divPage > div:first-child > div > div > button{
-  width: 12vw;
   margin: auto;
   border: none;
   height: 4vh;

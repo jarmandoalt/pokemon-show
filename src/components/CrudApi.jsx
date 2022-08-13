@@ -305,7 +305,7 @@ const CrudApi = () => {
                   onClick={handleSubmit}
                 >
                   {" "}
-                  Submit
+                  Surrender
                 </button>
                   }
                   <img
@@ -347,17 +347,17 @@ const CrudApi = () => {
             <div>
               {showCorrect ? (
                 <div id="divCorrect">
-                  <h2> YOU WIN</h2>
+                  <h2>WIN</h2>
                 </div>
               ) : (
                 disableBtn ?
                 <div id="divLost">
-                  <h2> YOU LOST </h2>
+                  <h2>LOST</h2>
                 </div>:
                 <input
                   type="text"
                   name="busqueda"
-                  placeholder="Nombre"
+                  placeholder="Name"
                   value={busquedaPokemon}
                   onKeyDown={controlInput}
                   id="buscador"
@@ -375,6 +375,7 @@ const CrudApi = () => {
                 value={name}
                 slot={name}
                 key={name}
+                translate="no"
                 onClick={selectNamePokemon}
               >
                 {name}
@@ -404,8 +405,8 @@ const CrudApi = () => {
                   <div>
                     <img src={img} alt="" />
                   </div>
-                  <div>
-                    <h1 value={name} slot={name} onClick={selectNamePokemon}>
+                  <div translate="no">
+                    <h1 value={name} slot={name} translate="no" onClick={selectNamePokemon}>
                       {name}
                     </h1>
                   </div>
@@ -463,7 +464,7 @@ const CrudApi = () => {
                     <img src={img} alt="" />
                   </div>
                   <div>
-                    <h1 value={name} slot={name} onClick={selectNamePokemon}>
+                    <h1 value={name} slot={name} translate="no" onClick={selectNamePokemon}>
                       {name}
                     </h1>
                   </div>
@@ -571,7 +572,6 @@ const CrudApi = () => {
           </div>
           <div>
             <button onClick={handleSend}>START</button>
-            <h3>please keep the language in english</h3>
           </div>
         </div>
       </div>
