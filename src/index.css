@@ -26,7 +26,7 @@ img {
 #divPage > div:last-child {
   position: fixed;
   left: 5vw;
-  top: 2vh;
+  top: 5vh;
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
@@ -43,8 +43,8 @@ img {
 #divPage > div:last-child > div:last-child {
   display: flex;
   flex-direction: column;
-  height: 70vh;
-  width: 70vw;
+  height: 65vh;
+  width: 75vw;
   border-radius: 10px;
   justify-content: space-around;
   background-color: rgba(0, 0, 0, 0.452);
@@ -59,7 +59,7 @@ img {
 }
 
 #divPage > div:last-child > div:last-child > div:first-child {
-  height: 20vh;
+  height: 10vh;
   width: 70vw;
   margin: auto;
 }
@@ -69,7 +69,7 @@ img {
   margin: auto;
   text-align: center;
   color: rgb(245, 246, 247);
-  font-size: 4vw;
+  font-size: 3.8vw;
 }
 
 #divPage > div:last-child > div:last-child > div:last-child {
@@ -77,7 +77,7 @@ img {
 }
 
 #divPage > div:last-child > div:last-child > div > button {
-  width: 50vw;
+  width: 55vw;
   height: 4vh;
   border: none;
   border-radius: 4px;
@@ -143,6 +143,7 @@ img {
   width: 18vw;
   border-radius: 10%;
   height: 6vh;
+  font-size: 3vw;
   border: none;
 }
 
@@ -174,6 +175,7 @@ img {
 
 #divBtnHide > div:last-child > h3 {
   font-size: 2vw;
+  margin-top: -2px;
   color: gray;
 }
 
@@ -874,10 +876,9 @@ img {
   #divBtnHide > div:last-child > h3 {
     position: relative;
     font-size: 1.3vw;
-    top: -1.3vh;
+    top: -2vh;
     color: gray;
   }
-  
   
   /************* Buscador ****************/
   
@@ -1581,7 +1582,7 @@ img {
   position: relative;
   color: gray;
   font-size: 1.3vw;
-  top: -1.2vh;
+  top: -3vh;
 }
 
 /************* Buscador ****************/
