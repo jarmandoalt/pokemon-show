@@ -97,7 +97,7 @@ img {
   background-color: rgb(129, 179, 212);
 }
 
-#divPage > div:last-child > div:last-child > div:last-child > button:last-child {
+#divPage > div:last-child > div:last-child > div:last-child > button{
   width: 45vw;
   height: 3.3vh;
   margin-top: 1vh;
@@ -107,9 +107,16 @@ img {
   border: none;
 }
 
-#divPage > div:last-child > div:last-child > div:last-child > button:last-child:hover {
+#divPage > div:last-child > div:last-child > div:last-child > button:hover {
   color: whitesmoke;
   background-color: rgb(171, 118, 192);
+}
+
+#divPage > div:last-child > div:last-child > div:last-child > h3 {
+  font-size: 2.8vw;
+  width: auto;
+  color: rgba(218, 218, 218, 0.692);
+  margin: auto;
 }
 
 /************* Btn hide ***************/
@@ -801,7 +808,7 @@ img {
     background-color: rgb(129, 179, 212);
   }
   
-  #divPage > div:last-child > div:last-child > div:last-child > button:last-child {
+  #divPage > div:last-child > div:last-child > div:last-child > button {
     width: 45vw;
     height: 5.5vw;
     margin-top: 1vh;
@@ -811,9 +818,17 @@ img {
     border: none;
   }
   
-  #divPage > div:last-child > div:last-child > div:last-child > button:last-child:hover {
+  #divPage > div:last-child > div:last-child > div:last-child > button:hover {
     color: whitesmoke;
     background-color: rgb(171, 118, 192);
+  }
+
+  #divPage > div:last-child > div:last-child > div:last-child > h3 {
+    font-size: 2vw;
+    width: auto;
+    color: rgba(218, 218, 218, 0.692);
+    margin: auto;
+    margin-bottom: 5px;
   }
   
   /************* Btn hide ***************/
@@ -1442,7 +1457,7 @@ img {
 #divPage > div:last-child > div:last-child {
   display: flex;
   flex-direction: column;
-  height: 80vh;
+  height: 70vh;
   width: 25vw;
   margin-left: 5vw;
   justify-content: space-around;
@@ -1455,7 +1470,7 @@ img {
 }
 
 #divPage > div:last-child > div:last-child > div:first-child {
-  height: 20vh;
+  height: 10vh;
   width: 20vw;
   margin: auto;
 }
@@ -1512,13 +1527,21 @@ img {
   border: none;
 }
 
-#divPage > div:last-child > div:last-child > div:last-child > button:last-child:hover {
+#divPage > div:last-child > div:last-child > div:last-child > button:hover {
   color: whitesmoke;
   background-color: rgb(171, 118, 192);
 }
 
 #divPage > div:last-child > div:last-child > div:last-child > button:hover {
   background-color: rgb(130, 150, 130)
+}
+
+#divPage > div:last-child > div:last-child > div:last-child > h3 {
+  font-size: 1vw;
+  width: auto;
+  color: rgba(94, 91, 91, 0.692);
+  margin: auto;
+  margin-bottom: 5px;
 }
 
 /************* Btn hide ***************/
