@@ -1614,7 +1614,7 @@ img {
   margin-top: 10vh;
   display: flex;
   flex-direction: column;
-  height: 22vh;
+  height: 28vh;
 }
 
 #divPage > div:first-child > div:first-child > h2{
@@ -1641,8 +1641,9 @@ img {
 #divPage > div:first-child > div > div > button{
   margin: auto;
   border: none;
-  height: 4vh;
-  font-size: 1.5vw;
+  height: 6vh;
+  width: 12vw;
+  font-size: 1vw;
   background-color: rgb(203, 192, 206);
   border-radius: 4px;
   color: whitesmoke;
@@ -1656,7 +1657,7 @@ img {
   background-color: rgb(189, 155, 199);
   border-radius: 4px;
   color: whitesmoke;
-  height: 5vh;
+  height: 6vh;
 }
 
 #divCorrect > h2 {
@@ -1803,7 +1804,7 @@ img {
   border: none;
   width: 20vw;
   text-align: center;
-  height: 3vh;
+  height: 4.5vh;
   margin: auto;
   font-size: 1.3vw;
   border-radius: 3px;
