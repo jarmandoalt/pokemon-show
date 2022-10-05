@@ -1,6 +1,6 @@
 import { Provider } from "react-redux";
 import { store } from "./store/index.jsx";
-import CrudApi from "./components/CrudApi";
+import CrudApi from "./pages/CrudApi";
 
 function App() {
   return (
