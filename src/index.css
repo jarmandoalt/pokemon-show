@@ -1496,7 +1496,7 @@ img {
   margin: auto;
   color: rgb(90, 87, 83);
   font-size: 1.2vw;
-  background-color: rgb(158, 157, 152);
+  background-color: rgb(206, 205, 202);
 }
 
 #divPage > div:last-child > div:last-child > div > button:hover {
@@ -1554,7 +1554,8 @@ img {
   background-color: rgb(197, 213, 226);
   cursor: pointer;
   margin-top: 1vh;
-  width: 15vw;
+  margin-left: 2.5vw;
+  width: 10vw;
   border-radius: 10%;
   height: 6vh;
   border: none;

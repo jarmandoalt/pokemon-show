@@ -297,7 +297,7 @@ const CrudApi = () => {
     for (let index = 0; index < arrGeneration.length; index++) {
       loadPokemon1(arrGeneration[index]);
     }
-    let auxNumArra = Math.floor(Math.random() * (arrGeneration.length + 1 - 1 + 1));
+    let auxNumArra = Math.floor(Math.random() * (arrGeneration.length - 1 + 1));
     
     if (arrGeneration.length === 1) {
       let max, min;
