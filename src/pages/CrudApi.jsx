@@ -407,7 +407,6 @@ const CrudApi = () => {
     e.preventDefault();
     if (e.target.value === dbPokemonSelect.name) {
       if (showImg === true) {
-        console.log("4");
         setShowCorrect(true);
         setDisableBtn(true)
       } else {
@@ -415,7 +414,6 @@ const CrudApi = () => {
         setShowImg(true)
         setDisableBtn(true)
       }
-      refImgSelect.current.classList.add("is-correct");
     }
     pokemonSelect(e.target.value);
     setArrPokemonsUse(...arrPokemonsUse, e.target.value);
@@ -425,6 +423,14 @@ const CrudApi = () => {
     setNamePokemonSelect(auxArr);
     dispatch(DELETE_POKEMON(e.target.value));
   };
+
+  useEffect(() => {
+    if (showCorrect === true) {
+      if (refImgSelect.current) {
+        refImgSelect.current.classList.add("is-correct");
+      }
+    }
+  }, [refImgSelect])
 
   const handleSubmit = () => {
     if (showImg) {

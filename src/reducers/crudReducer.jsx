@@ -23,7 +23,6 @@ const crudReducer = createSlice({
       state.dbPokemonSelect = Object.assign(state.dbPokemonSelect, action.payload);
     },
     DELETE_POKEMON: (state, action) => {
-      console.log(action.payload); 
       state.dbPokemon1 = state.dbPokemon1.filter((item) => item.name !== action.payload )
     },
   },
