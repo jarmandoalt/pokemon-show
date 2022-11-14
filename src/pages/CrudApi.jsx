@@ -39,6 +39,21 @@ const CrudApi = () => {
     refPanel = createRef(),
     refPanelPokeball = createRef();
 
+let details = navigator.userAgent;
+  
+        /* Creating a regular expression 
+        containing some mobile devices keywords 
+        to search it in details string*/
+        let regexp = /android|iphone|kindle|ipad/i;
+  
+        /* Using test() method to search regexp in details
+        it returns boolean value*/
+        let isMobileDevice = regexp.test(details);
+  
+        if (isMobileDevice) {
+            document.write("You are using a Mobile Device");
+        } 
+
   /* document.addEventListener("keydown", (e) => {
     let $input = document.getElementById("buscador");
     if (
